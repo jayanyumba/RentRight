@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Website Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showForm(role) {
+            document.querySelectorAll('.login-form').forEach(form => form.style.display = 'none');
+            document.getElementById(role + '-form').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <ul class="navbar_menu">
+        <li class="navbar_item">
+            <a href="/index.html" class="navbar_links">HOME</a>
+        </li>
+        <li class="navbar_item">
+            <a href="/service.html" class="navbar_links">SERVICES</a>
+            </li>
+            <li class="navbar_item">
+                <a href="/pay.html" class="navbar_links">PAY</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/LOGIN.html" class="navbar_links">LOGIN</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/REGISTER.HTML." class="navbar_links">REGISTER</a>S
+                        </li>
+     </ul>
+    </div>
+</nav>
+    <div class="login-container">
+        <h2>Login</h2>
+        <button onclick="showForm('caretaker')">Login as a Caretaker</button>
+        <button onclick="showForm('tenant')">Login as a Tenant</button>
+        <button onclick="showForm('landlord')">Login as a Landlord</button>
+
+        <div id="caretaker-form" class="login-form">
+            <h3>Login as Caretaker</h3>
+            <form action="index.html">
+                <input type="text" placeholder="Name" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="tenant-form" class="login-form">
+            <h3>Login as Tenant</h3>
+            <form action="index.html">
+                <input type="text" placeholder="House Number" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="landlord-form" class="login-form">
+            <h3>Login as Landlord</h3>
+            <form action="index.html">
+                <input type="text" placeholder="Name" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
