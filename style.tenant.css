@@ -1,0 +1,208 @@
+
+/*----------------------------------tenant dashboard----------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#1d2634 ;
+    color: #b5aeaea4;
+    font-family: "Montserrat", sans-serif;
+
+}
+.material-icons-outlined
+{
+vertical-align: middle;
+line-height: 1px;
+font-size: 35px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'sidebar header header header'
+      'sidebar main main main';
+    height: 100vh;
+  }
+
+
+/*------------------HEADER-------------------*/
+.header {
+    grid-area: header;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 30px 0 30px;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+.menu-icon {
+    display: none;
+}
+/*------------------SIDEBAR-------------------*/
+
+#sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #2d2c2c;
+    overflow: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    width: 100%;
+}
+.sidebar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 30px;
+
+}
+.sidebar-title > span{
+    display: none;
+
+}
+.sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.sidebar-list {
+    padding: 0px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+.sidebar-list-item { 
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+}
+.sidebar-list-item :hover{
+    background-color: #46444433;
+    cursor: pointer;
+}
+.sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
+}
+
+.main-container{
+    grid-area: main;
+    overflow: auto;
+    padding: 20px 20px;
+    color: rgba(255, 255, 255, 0.95);
+}
+.header-left{
+    position: absolute;
+    left: 280px;
+}
+.container {
+    padding: 15px 9px;
+    padding-bottom: 100px;
+} 
+.container h1 {
+    text-align: center;
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    font-size: 50px;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    gap: 15px;
+}
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+}
+.container .box-container .box img{
+    height: 70px;
+}
+.container .box-container .box h3{
+    color: #2d2c2c;
+    font-size: 22px;
+    padding: 10px 0;
+
+}
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #1d2634;
+    color: beige;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+} 
+/*-----------------------------------GRID LAYOUT-------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+.logo {
+    text-align: left;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav a {
+    color: #fff; /* White text color from image */
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 190px);
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    
+}
+.container a{
+    color: #5e3e3e;
+    
+}
+
+.grid-item {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5%;
+    justify-content: space-around;
+}
+.grid-item a {
+    color: #f1f1f1;/* Remove underline */
+}
+.grid-item:hover{
+    background: white;
+    color: #a9a2a3;
+    border-radius: 10%;
+}
+.grid-item a:hover{
+    color: #232020; 
+}
